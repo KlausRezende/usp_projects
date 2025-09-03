@@ -1,0 +1,34 @@
+[2025-09-03T00:25:12.851+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: institution_detail_pipeline.silver_empregados manual__2025-09-03T00:24:02.455529+00:00 [queued]>
+[2025-09-03T00:25:12.860+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: institution_detail_pipeline.silver_empregados manual__2025-09-03T00:24:02.455529+00:00 [queued]>
+[2025-09-03T00:25:12.860+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2025-09-03T00:25:12.860+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2025-09-03T00:25:12.861+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2025-09-03T00:25:12.873+0000] {taskinstance.py:1300} INFO - Executing <Task(BashOperator): silver_empregados> on 2025-09-03 00:24:02.455529+00:00
+[2025-09-03T00:25:12.877+0000] {standard_task_runner.py:55} INFO - Started process 15263 to run task
+[2025-09-03T00:25:12.879+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'institution_detail_pipeline', 'silver_empregados', 'manual__2025-09-03T00:24:02.455529+00:00', '--job-id', '92', '--raw', '--subdir', 'DAGS_FOLDER/dag_institution.py', '--cfg-path', '/tmp/tmpiuts3c3e']
+[2025-09-03T00:25:12.880+0000] {standard_task_runner.py:83} INFO - Job 92: Subtask silver_empregados
+[2025-09-03T00:25:12.896+0000] {logging_mixin.py:137} WARNING - /usr/local/lib/python3.9/site-packages/***/settings.py:249 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-09-03T00:25:12.938+0000] {task_command.py:388} INFO - Running <TaskInstance: institution_detail_pipeline.silver_empregados manual__2025-09-03T00:24:02.455529+00:00 [running]> on host f321ea8b8484
+[2025-09-03T00:24:22.381+0000] {taskinstance.py:1507} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Klaus_Rezende
+AIRFLOW_CTX_DAG_ID=institution_detail_pipeline
+AIRFLOW_CTX_TASK_ID=silver_empregados
+AIRFLOW_CTX_EXECUTION_DATE=2025-09-03T00:24:02.455529+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2025-09-03T00:24:02.455529+00:00
+[2025-09-03T00:24:22.382+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2025-09-03T00:24:22.383+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python3 /opt/***/scripts/silver/tb_sv_empregados.py']
+[2025-09-03T00:24:22.393+0000] {subprocess.py:86} INFO - Output:
+[2025-09-03T00:24:25.443+0000] {subprocess.py:93} INFO - 25/09/03 00:24:25 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[2025-09-03T00:24:25.684+0000] {subprocess.py:93} INFO - Setting default log level to "WARN".
+[2025-09-03T00:24:25.685+0000] {subprocess.py:93} INFO - To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+[2025-09-03T00:24:26.848+0000] {subprocess.py:93} INFO - 25/09/03 00:24:26 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+[2025-09-03T00:24:26.849+0000] {subprocess.py:93} INFO - 25/09/03 00:24:26 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+[2025-09-03T00:24:35.710+0000] {subprocess.py:93} INFO - Silver empregados data saved
+[2025-09-03T00:24:36.150+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-09-03T00:24:36.177+0000] {taskinstance.py:1318} INFO - Marking task as SUCCESS. dag_id=institution_detail_pipeline, task_id=silver_empregados, execution_date=20250903T002402, start_date=20250903T002512, end_date=20250903T002436
+[2025-09-03T00:25:22.942+0000] {local_task_job.py:208} INFO - Task exited with return code 0
+[2025-09-03T00:25:22.954+0000] {taskinstance.py:2578} INFO - 0 downstream tasks scheduled from follow-on schedule check

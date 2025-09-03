@@ -1,0 +1,38 @@
+config:
+  dag_name: institution_detail_pipeline
+  schedule_interval: 0 9 * * *
+  
+run_scripts:
+  bronze:
+    dependencies: []
+    scripts:
+      - name: bronze_bancos
+        command: python3 /opt/airflow/scripts/bronze/tb_bz_bancos.py
+      - name: bronze_empregados
+        command: python3 /opt/airflow/scripts/bronze/tb_bz_empregados.py
+      - name: bronze_reclamacoes
+        command: python3 /opt/airflow/scripts/bronze/tb_bz_reclamacoes.py
+  
+  silver:
+    dependencies: ["bronze"]
+    scripts:
+      - name: silver_bancos
+        command: python3 /opt/airflow/scripts/silver/tb_sv_bancos.py
+        depends_on: bronze_bancos
+      - name: silver_empregados
+        command: python3 /opt/airflow/scripts/silver/tb_sv_empregados.py
+        depends_on: bronze_empregados
+      - name: silver_reclamacoes
+        command: python3 /opt/airflow/scripts/silver/tb_sv_reclamacoes.py
+        depends_on: bronze_reclamacoes
+  
+  gold:
+    dependencies: ["silver"]
+    scripts:
+      - name: gold_institution_detail
+        command: python3 /opt/airflow/scripts/gold/tb_gd_customer_detail.py
+        depends_on: ["silver_bancos", "silver_empregados", "silver_reclamacoes"]
+
+triggers:
+  - dag_id: institution_detail_data_quality_pipeline
+    depends_on: gold_institution_detail

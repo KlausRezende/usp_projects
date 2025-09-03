@@ -1,0 +1,6 @@
+config:
+  dag_name: institution_detail_data_quality_pipeline
+  schedule_interval: null
+  data_quality_percentage: 80.00
+  run_scripts:
+  - data_quality: python3 /opt/airflow/scripts/data_quality/data_quality_institution.py

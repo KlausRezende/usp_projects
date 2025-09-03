@@ -1,0 +1,82 @@
+[2025-09-03T01:51:27.715+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: institution_detail_pipeline.bronze_empregados scheduled__2025-09-01T09:00:00+00:00 [queued]>
+[2025-09-03T01:51:27.721+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: institution_detail_pipeline.bronze_empregados scheduled__2025-09-01T09:00:00+00:00 [queued]>
+[2025-09-03T01:51:27.721+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2025-09-03T01:51:27.721+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2025-09-03T01:51:27.721+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2025-09-03T01:51:27.729+0000] {taskinstance.py:1300} INFO - Executing <Task(BashOperator): bronze_empregados> on 2025-09-01 09:00:00+00:00
+[2025-09-03T01:51:27.732+0000] {standard_task_runner.py:55} INFO - Started process 419 to run task
+[2025-09-03T01:51:27.734+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'institution_detail_pipeline', 'bronze_empregados', 'scheduled__2025-09-01T09:00:00+00:00', '--job-id', '2', '--raw', '--subdir', 'DAGS_FOLDER/dag_institution.py', '--cfg-path', '/tmp/tmp4pfwrj7v']
+[2025-09-03T01:51:27.735+0000] {standard_task_runner.py:83} INFO - Job 2: Subtask bronze_empregados
+[2025-09-03T01:51:27.748+0000] {logging_mixin.py:137} WARNING - /usr/local/lib/python3.9/site-packages/***/settings.py:249 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-09-03T01:51:27.765+0000] {logging_mixin.py:137} WARNING - /usr/local/lib/python3.9/site-packages/***/utils/sqlalchemy.py:124 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-09-03T01:51:27.792+0000] {task_command.py:388} INFO - Running <TaskInstance: institution_detail_pipeline.bronze_empregados scheduled__2025-09-01T09:00:00+00:00 [running]> on host fe630f5e6718
+[2025-09-03T01:51:27.849+0000] {taskinstance.py:1507} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Klaus_Rezende
+AIRFLOW_CTX_DAG_ID=institution_detail_pipeline
+AIRFLOW_CTX_TASK_ID=bronze_empregados
+AIRFLOW_CTX_EXECUTION_DATE=2025-09-01T09:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2025-09-01T09:00:00+00:00
+[2025-09-03T01:51:27.859+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2025-09-03T01:51:27.860+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python3 /opt/***/scripts/bronze/tb_bz_empregados.py']
+[2025-09-03T01:51:27.871+0000] {subprocess.py:86} INFO - Output:
+[2025-09-03T01:52:25.511+0000] {subprocess.py:93} INFO - 25/09/03 01:52:25 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[2025-09-03T01:51:35.399+0000] {subprocess.py:93} INFO - Setting default log level to "WARN".
+[2025-09-03T01:51:35.400+0000] {subprocess.py:93} INFO - To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+[2025-09-03T01:51:40.952+0000] {subprocess.py:93} INFO - 25/09/03 01:51:40 WARN CSVHeaderChecker: CSV header does not conform to the schema.
+[2025-09-03T01:51:40.953+0000] {subprocess.py:93} INFO -  Header: Geral, Cultura e valores, Diversidade e inclusão, Qualidade de vida, Alta liderança, Remuneração e benefícios, Oportunidades de carreira, CNPJ, Nome, match_percent
+[2025-09-03T01:51:40.954+0000] {subprocess.py:93} INFO -  Schema: Geral, Cultura e valores, Diversidade e inclusão, Qualidade de vida, Alta liderança, Remuneração e benefícios, Oportunidades de carreira, Segmento, Nome, match_percent
+[2025-09-03T01:51:40.954+0000] {subprocess.py:93} INFO - Expected: Segmento but found: CNPJ
+[2025-09-03T01:51:40.954+0000] {subprocess.py:93} INFO - CSV file: file:///opt/***/data_source/Empregados/glassdoor_consolidado_join_match_less_v2.csv
+[2025-09-03T01:51:41.107+0000] {subprocess.py:93} INFO - Bronze empregados data saved
+[2025-09-03T01:51:41.666+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-09-03T01:51:41.691+0000] {taskinstance.py:1318} INFO - Marking task as SUCCESS. dag_id=institution_detail_pipeline, task_id=bronze_empregados, execution_date=20250901T090000, start_date=20250903T015127, end_date=20250903T015141
+[2025-09-03T01:51:41.716+0000] {local_task_job.py:208} INFO - Task exited with return code 0
+[2025-09-03T01:51:41.740+0000] {taskinstance.py:2578} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-09-03T02:06:47.456+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: institution_detail_pipeline.bronze_empregados scheduled__2025-09-01T09:00:00+00:00 [queued]>
+[2025-09-03T02:06:47.477+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: institution_detail_pipeline.bronze_empregados scheduled__2025-09-01T09:00:00+00:00 [queued]>
+[2025-09-03T02:06:47.478+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2025-09-03T02:06:47.478+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2025-09-03T02:06:47.478+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2025-09-03T02:06:47.492+0000] {taskinstance.py:1300} INFO - Executing <Task(BashOperator): bronze_empregados> on 2025-09-01 09:00:00+00:00
+[2025-09-03T02:06:47.500+0000] {standard_task_runner.py:55} INFO - Started process 262 to run task
+[2025-09-03T02:06:47.505+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'institution_detail_pipeline', 'bronze_empregados', 'scheduled__2025-09-01T09:00:00+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/dag_institution.py', '--cfg-path', '/tmp/tmpvnydmi0h']
+[2025-09-03T02:06:47.507+0000] {standard_task_runner.py:83} INFO - Job 3: Subtask bronze_empregados
+[2025-09-03T02:06:47.580+0000] {logging_mixin.py:137} WARNING - /usr/local/lib/python3.9/site-packages/***/settings.py:249 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-09-03T02:06:47.675+0000] {logging_mixin.py:137} WARNING - /usr/local/lib/python3.9/site-packages/***/utils/sqlalchemy.py:124 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-09-03T02:06:48.279+0000] {task_command.py:388} INFO - Running <TaskInstance: institution_detail_pipeline.bronze_empregados scheduled__2025-09-01T09:00:00+00:00 [running]> on host 72c28e8237fc
+[2025-09-03T02:06:50.138+0000] {taskinstance.py:1507} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Klaus_Rezende
+AIRFLOW_CTX_DAG_ID=institution_detail_pipeline
+AIRFLOW_CTX_TASK_ID=bronze_empregados
+AIRFLOW_CTX_EXECUTION_DATE=2025-09-01T09:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2025-09-01T09:00:00+00:00
+[2025-09-03T02:06:50.180+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2025-09-03T02:06:50.199+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python3 /opt/***/scripts/bronze/tb_bz_empregados.py']
+[2025-09-03T02:06:50.276+0000] {subprocess.py:86} INFO - Output:
+[2025-09-03T02:07:00.526+0000] {subprocess.py:93} INFO - 25/09/03 02:07:00 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[2025-09-03T02:07:00.753+0000] {subprocess.py:93} INFO - Setting default log level to "WARN".
+[2025-09-03T02:07:00.754+0000] {subprocess.py:93} INFO - To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+[2025-09-03T02:07:01.973+0000] {subprocess.py:93} INFO - 25/09/03 02:07:01 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+[2025-09-03T02:07:01.975+0000] {subprocess.py:93} INFO - 25/09/03 02:07:01 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+[2025-09-03T02:07:01.975+0000] {subprocess.py:93} INFO - 25/09/03 02:07:01 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
+[2025-09-03T02:07:01.976+0000] {subprocess.py:93} INFO - 25/09/03 02:07:01 WARN Utils: Service 'SparkUI' could not bind on port 4043. Attempting port 4044.
+[2025-09-03T02:07:16.891+0000] {subprocess.py:93} INFO - 25/09/03 02:07:16 WARN GarbageCollectionMetrics: To enable non-built-in garbage collector(s) List(G1 Concurrent GC), users should configure it(them) to spark.eventLog.gcMetrics.youngGenerationGarbageCollectors or spark.eventLog.gcMetrics.oldGenerationGarbageCollectors
+[2025-09-03T02:07:22.902+0000] {subprocess.py:93} INFO - 25/09/03 02:07:22 WARN CSVHeaderChecker: CSV header does not conform to the schema.
+[2025-09-03T02:07:22.903+0000] {subprocess.py:93} INFO -  Header: Geral, Cultura e valores, Diversidade e inclusão, Qualidade de vida, Alta liderança, Remuneração e benefícios, Oportunidades de carreira, CNPJ, Nome, match_percent
+[2025-09-03T02:07:22.904+0000] {subprocess.py:93} INFO -  Schema: Geral, Cultura e valores, Diversidade e inclusão, Qualidade de vida, Alta liderança, Remuneração e benefícios, Oportunidades de carreira, Segmento, Nome, match_percent
+[2025-09-03T02:07:22.904+0000] {subprocess.py:93} INFO - Expected: Segmento but found: CNPJ
+[2025-09-03T02:07:22.904+0000] {subprocess.py:93} INFO - CSV file: file:///opt/***/data_source/Empregados/glassdoor_consolidado_join_match_less_v2.csv
+[2025-09-03T02:07:23.202+0000] {subprocess.py:93} INFO - Bronze empregados data saved
+[2025-09-03T02:07:23.203+0000] {subprocess.py:93} INFO - ✅ Table comments added for tb_bz_empregados
+[2025-09-03T02:07:23.987+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-09-03T02:07:24.450+0000] {taskinstance.py:1318} INFO - Marking task as SUCCESS. dag_id=institution_detail_pipeline, task_id=bronze_empregados, execution_date=20250901T090000, start_date=20250903T020647, end_date=20250903T020724
+[2025-09-03T02:07:24.601+0000] {local_task_job.py:208} INFO - Task exited with return code 0
+[2025-09-03T02:07:24.765+0000] {taskinstance.py:2578} INFO - 1 downstream tasks scheduled from follow-on schedule check

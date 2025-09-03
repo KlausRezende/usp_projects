@@ -1,0 +1,34 @@
+[2025-09-03T02:09:40.381+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: institution_detail_pipeline.gold_institution_detail scheduled__2025-09-01T09:00:00+00:00 [queued]>
+[2025-09-03T02:09:40.393+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: institution_detail_pipeline.gold_institution_detail scheduled__2025-09-01T09:00:00+00:00 [queued]>
+[2025-09-03T02:09:40.394+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2025-09-03T02:09:40.394+0000] {taskinstance.py:1280} INFO - Starting attempt 2 of 1
+[2025-09-03T02:09:40.394+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2025-09-03T02:09:40.408+0000] {taskinstance.py:1300} INFO - Executing <Task(BashOperator): gold_institution_detail> on 2025-09-01 09:00:00+00:00
+[2025-09-03T02:09:40.412+0000] {standard_task_runner.py:55} INFO - Started process 194 to run task
+[2025-09-03T02:09:40.415+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'institution_detail_pipeline', 'gold_institution_detail', 'scheduled__2025-09-01T09:00:00+00:00', '--job-id', '35', '--raw', '--subdir', 'DAGS_FOLDER/dag_institution.py', '--cfg-path', '/tmp/tmpyzx3hg_r']
+[2025-09-03T02:09:40.417+0000] {standard_task_runner.py:83} INFO - Job 35: Subtask gold_institution_detail
+[2025-09-03T02:09:40.441+0000] {logging_mixin.py:137} WARNING - /usr/local/lib/python3.9/site-packages/***/settings.py:249 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-09-03T02:09:40.465+0000] {logging_mixin.py:137} WARNING - /usr/local/lib/python3.9/site-packages/***/utils/sqlalchemy.py:124 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-09-03T02:09:40.506+0000] {task_command.py:388} INFO - Running <TaskInstance: institution_detail_pipeline.gold_institution_detail scheduled__2025-09-01T09:00:00+00:00 [running]> on host 72c28e8237fc
+[2025-09-03T02:09:40.584+0000] {taskinstance.py:1507} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Klaus_Rezende
+AIRFLOW_CTX_DAG_ID=institution_detail_pipeline
+AIRFLOW_CTX_TASK_ID=gold_institution_detail
+AIRFLOW_CTX_EXECUTION_DATE=2025-09-01T09:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2025-09-01T09:00:00+00:00
+[2025-09-03T02:09:40.587+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2025-09-03T02:09:40.588+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python3 /opt/***/scripts/gold/tb_gd_customer_detail.py']
+[2025-09-03T02:09:40.600+0000] {subprocess.py:86} INFO - Output:
+[2025-09-03T02:09:43.183+0000] {subprocess.py:93} INFO - 25/09/03 02:09:43 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[2025-09-03T02:09:43.336+0000] {subprocess.py:93} INFO - Setting default log level to "WARN".
+[2025-09-03T02:09:43.336+0000] {subprocess.py:93} INFO - To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+[2025-09-03T02:09:50.930+0000] {subprocess.py:93} INFO - Gold institution detail data saved with simplified structure
+[2025-09-03T02:09:50.930+0000] {subprocess.py:93} INFO - ✅ Table comments added for tb_gd_institution_detail
+[2025-09-03T02:09:51.459+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-09-03T02:09:51.480+0000] {taskinstance.py:1318} INFO - Marking task as SUCCESS. dag_id=institution_detail_pipeline, task_id=gold_institution_detail, execution_date=20250901T090000, start_date=20250903T020940, end_date=20250903T020951
+[2025-09-03T02:09:51.515+0000] {local_task_job.py:208} INFO - Task exited with return code 0
+[2025-09-03T02:09:51.531+0000] {taskinstance.py:2578} INFO - 1 downstream tasks scheduled from follow-on schedule check

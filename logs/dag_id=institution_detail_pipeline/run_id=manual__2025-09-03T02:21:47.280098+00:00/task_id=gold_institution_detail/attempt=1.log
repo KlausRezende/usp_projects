@@ -1,0 +1,33 @@
+[2025-09-03T02:22:13.577+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: institution_detail_pipeline.gold_institution_detail manual__2025-09-03T02:21:47.280098+00:00 [queued]>
+[2025-09-03T02:22:13.583+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: institution_detail_pipeline.gold_institution_detail manual__2025-09-03T02:21:47.280098+00:00 [queued]>
+[2025-09-03T02:22:13.583+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2025-09-03T02:22:13.583+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2025-09-03T02:22:13.583+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2025-09-03T02:22:13.590+0000] {taskinstance.py:1300} INFO - Executing <Task(BashOperator): gold_institution_detail> on 2025-09-03 02:21:47.280098+00:00
+[2025-09-03T02:22:13.593+0000] {standard_task_runner.py:55} INFO - Started process 2108 to run task
+[2025-09-03T02:22:13.594+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'institution_detail_pipeline', 'gold_institution_detail', 'manual__2025-09-03T02:21:47.280098+00:00', '--job-id', '46', '--raw', '--subdir', 'DAGS_FOLDER/dag_institution.py', '--cfg-path', '/tmp/tmp5w5a4r0i']
+[2025-09-03T02:22:13.595+0000] {standard_task_runner.py:83} INFO - Job 46: Subtask gold_institution_detail
+[2025-09-03T02:22:13.606+0000] {logging_mixin.py:137} WARNING - /usr/local/lib/python3.9/site-packages/***/settings.py:249 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-09-03T02:22:13.637+0000] {task_command.py:388} INFO - Running <TaskInstance: institution_detail_pipeline.gold_institution_detail manual__2025-09-03T02:21:47.280098+00:00 [running]> on host 72c28e8237fc
+[2025-09-03T02:22:13.677+0000] {taskinstance.py:1507} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Klaus_Rezende
+AIRFLOW_CTX_DAG_ID=institution_detail_pipeline
+AIRFLOW_CTX_TASK_ID=gold_institution_detail
+AIRFLOW_CTX_EXECUTION_DATE=2025-09-03T02:21:47.280098+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2025-09-03T02:21:47.280098+00:00
+[2025-09-03T02:22:13.678+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2025-09-03T02:22:13.679+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python3 /opt/***/scripts/gold/tb_gd_customer_detail.py']
+[2025-09-03T02:22:13.685+0000] {subprocess.py:86} INFO - Output:
+[2025-09-03T02:22:15.684+0000] {subprocess.py:93} INFO - 25/09/03 02:22:15 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[2025-09-03T02:22:15.874+0000] {subprocess.py:93} INFO - Setting default log level to "WARN".
+[2025-09-03T02:22:15.875+0000] {subprocess.py:93} INFO - To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+[2025-09-03T02:22:21.848+0000] {subprocess.py:93} INFO - Gold institution detail data saved with simplified structure
+[2025-09-03T02:22:21.848+0000] {subprocess.py:93} INFO - ✅ Table comments added for tb_gd_institution_detail
+[2025-09-03T02:22:22.286+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-09-03T02:22:22.304+0000] {taskinstance.py:1318} INFO - Marking task as SUCCESS. dag_id=institution_detail_pipeline, task_id=gold_institution_detail, execution_date=20250903T022147, start_date=20250903T022213, end_date=20250903T022222
+[2025-09-03T02:22:22.354+0000] {local_task_job.py:208} INFO - Task exited with return code 0
+[2025-09-03T02:22:22.369+0000] {taskinstance.py:2578} INFO - 0 downstream tasks scheduled from follow-on schedule check

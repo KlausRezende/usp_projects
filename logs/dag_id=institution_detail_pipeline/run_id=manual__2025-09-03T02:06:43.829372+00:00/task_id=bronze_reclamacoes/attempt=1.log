@@ -1,0 +1,39 @@
+[2025-09-03T02:06:47.457+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: institution_detail_pipeline.bronze_reclamacoes manual__2025-09-03T02:06:43.829372+00:00 [queued]>
+[2025-09-03T02:06:47.477+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: institution_detail_pipeline.bronze_reclamacoes manual__2025-09-03T02:06:43.829372+00:00 [queued]>
+[2025-09-03T02:06:47.478+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2025-09-03T02:06:47.478+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2025-09-03T02:06:47.478+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2025-09-03T02:06:47.494+0000] {taskinstance.py:1300} INFO - Executing <Task(BashOperator): bronze_reclamacoes> on 2025-09-03 02:06:43.829372+00:00
+[2025-09-03T02:06:47.500+0000] {standard_task_runner.py:55} INFO - Started process 258 to run task
+[2025-09-03T02:06:47.504+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'institution_detail_pipeline', 'bronze_reclamacoes', 'manual__2025-09-03T02:06:43.829372+00:00', '--job-id', '2', '--raw', '--subdir', 'DAGS_FOLDER/dag_institution.py', '--cfg-path', '/tmp/tmptr5knnfi']
+[2025-09-03T02:06:47.506+0000] {standard_task_runner.py:83} INFO - Job 2: Subtask bronze_reclamacoes
+[2025-09-03T02:06:47.576+0000] {logging_mixin.py:137} WARNING - /usr/local/lib/python3.9/site-packages/***/settings.py:249 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-09-03T02:06:48.279+0000] {task_command.py:388} INFO - Running <TaskInstance: institution_detail_pipeline.bronze_reclamacoes manual__2025-09-03T02:06:43.829372+00:00 [running]> on host 72c28e8237fc
+[2025-09-03T02:06:50.138+0000] {taskinstance.py:1507} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Klaus_Rezende
+AIRFLOW_CTX_DAG_ID=institution_detail_pipeline
+AIRFLOW_CTX_TASK_ID=bronze_reclamacoes
+AIRFLOW_CTX_EXECUTION_DATE=2025-09-03T02:06:43.829372+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2025-09-03T02:06:43.829372+00:00
+[2025-09-03T02:06:50.180+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2025-09-03T02:06:50.202+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python3 /opt/***/scripts/bronze/tb_bz_reclamacoes.py']
+[2025-09-03T02:06:50.276+0000] {subprocess.py:86} INFO - Output:
+[2025-09-03T02:07:00.525+0000] {subprocess.py:93} INFO - 25/09/03 02:07:00 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[2025-09-03T02:07:00.766+0000] {subprocess.py:93} INFO - Setting default log level to "WARN".
+[2025-09-03T02:07:00.766+0000] {subprocess.py:93} INFO - To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+[2025-09-03T02:07:01.976+0000] {subprocess.py:93} INFO - 25/09/03 02:07:01 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+[2025-09-03T02:07:01.981+0000] {subprocess.py:93} INFO - 25/09/03 02:07:01 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+[2025-09-03T02:07:01.982+0000] {subprocess.py:93} INFO - 25/09/03 02:07:01 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
+[2025-09-03T02:07:01.982+0000] {subprocess.py:93} INFO - 25/09/03 02:07:01 WARN Utils: Service 'SparkUI' could not bind on port 4043. Attempting port 4044.
+[2025-09-03T02:07:01.983+0000] {subprocess.py:93} INFO - 25/09/03 02:07:01 WARN Utils: Service 'SparkUI' could not bind on port 4044. Attempting port 4045.
+[2025-09-03T02:07:18.329+0000] {subprocess.py:93} INFO - 25/09/03 02:07:18 WARN GarbageCollectionMetrics: To enable non-built-in garbage collector(s) List(G1 Concurrent GC), users should configure it(them) to spark.eventLog.gcMetrics.youngGenerationGarbageCollectors or spark.eventLog.gcMetrics.oldGenerationGarbageCollectors
+[2025-09-03T02:07:23.461+0000] {subprocess.py:93} INFO - Bronze reclamacoes data saved
+[2025-09-03T02:07:23.462+0000] {subprocess.py:93} INFO - ✅ Table comments added for tb_bz_reclamacoes
+[2025-09-03T02:07:24.045+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-09-03T02:07:24.503+0000] {taskinstance.py:1318} INFO - Marking task as SUCCESS. dag_id=institution_detail_pipeline, task_id=bronze_reclamacoes, execution_date=20250903T020643, start_date=20250903T020647, end_date=20250903T020724
+[2025-09-03T02:07:24.648+0000] {local_task_job.py:208} INFO - Task exited with return code 0
+[2025-09-03T02:07:24.859+0000] {taskinstance.py:2578} INFO - 1 downstream tasks scheduled from follow-on schedule check
