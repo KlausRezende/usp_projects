@@ -33,7 +33,7 @@ Após a execução, acesse as URLs disponibilizadas e faça login com as credenc
 
 ### OpenMetadata
 - **Usuário:** admin@open-metadata.org
-- **Senha:** adminpostgres_simple
+- **Senha:** admin
 
 ## Configuração do Banco de Dados (OpenMetadata)
 
