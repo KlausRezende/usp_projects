@@ -1,0 +1,45 @@
+Expectativa: expect_column_values_to_not_be_null | Coluna: geral | Sucesso: False
+Detalhes da falha: {
+  "success": false,
+  "meta": {},
+  "expectation_config": {
+    "kwargs": {
+      "column": "geral",
+      "batch_id": "pandas_datasource-institution_detail"
+    },
+    "expectation_type": "expect_column_values_to_not_be_null",
+    "meta": {}
+  },
+  "result": {
+    "element_count": 11,
+    "unexpected_count": 10,
+    "unexpected_percent": 90.9090909090909,
+    "partial_unexpected_list": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  "exception_info": {
+    "raised_exception": false,
+    "exception_traceback": null,
+    "exception_message": null
+  }
+}
+------------------------------------------------------------
+Expectativa: expect_column_values_to_be_between | Coluna: geral | Sucesso: True
+------------------------------------------------------------
+Expectativa: expect_column_values_to_be_in_set | Coluna: categoria | Sucesso: True
+------------------------------------------------------------
+Expectativa: expect_column_values_to_not_be_null | Coluna: tipo | Sucesso: True
+------------------------------------------------------------
+Expectativa: expect_column_values_to_be_between | Coluna: total_reclamacoes | Sucesso: True
+------------------------------------------------------------
+Percentual de validações bem-sucedidas: 80.00%
