@@ -1845,3 +1845,86 @@ File Path                               PID  Runtime      # DAGs    # Errors  La
 /opt/airflow/dags/dag_institution.py    275  0.00s             1           0  0.07s           2025-09-03T03:57:23
 /opt/airflow/dags/dag_dataquality.py    272  0.01s             1           0  0.07s           2025-09-03T03:57:23
 ================================================================================
+[2025-09-03T04:32:20.014+0000] {manager.py:483} INFO - Processing files using up to 2 processes at a time 
+[2025-09-03T04:32:20.016+0000] {manager.py:484} INFO - Process each file at most once every 30 seconds
+[2025-09-03T04:32:20.016+0000] {manager.py:485} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-09-03T04:32:20.016+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2025-09-03T04:32:20.019+0000] {manager.py:729} INFO - There are 2 files in /opt/airflow/dags
+[2025-09-03T04:32:20.224+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                               PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/dag_institution.py    182  0.18s             0           0
+/opt/airflow/dags/dag_dataquality.py    185  0.17s             0           0
+================================================================================
+[2025-09-03T04:32:50.308+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_institution.py                           1           0  0.36s           2025-09-03T04:32:20
+/opt/airflow/dags/dag_dataquality.py                           1           0  0.35s           2025-09-03T04:32:20
+================================================================================
+[2025-09-03T04:33:20.583+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                               PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_institution.py    254  0.01s             1           0  0.08s           2025-09-03T04:32:50
+/opt/airflow/dags/dag_dataquality.py    257  0.00s             1           0  0.07s           2025-09-03T04:32:50
+================================================================================
+[2025-09-03T04:33:21.420+0000] {manager.py:465} INFO - Exiting gracefully upon receiving signal 15
+[2025-09-03T04:35:59.560+0000] {manager.py:483} INFO - Processing files using up to 2 processes at a time 
+[2025-09-03T04:35:59.562+0000] {manager.py:484} INFO - Process each file at most once every 30 seconds
+[2025-09-03T04:35:59.562+0000] {manager.py:485} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-09-03T04:35:59.562+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2025-09-03T04:35:59.564+0000] {manager.py:729} INFO - There are 2 files in /opt/airflow/dags
+[2025-09-03T04:35:59.785+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                               PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/dag_institution.py    214  0.19s             0           0
+/opt/airflow/dags/dag_dataquality.py    217  0.19s             0           0
+================================================================================
+[2025-09-03T04:36:30.110+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_institution.py                           1           0  0.09s           2025-09-03T04:37:02
+/opt/airflow/dags/dag_dataquality.py                           1           0  0.08s           2025-09-03T04:37:02
+================================================================================
+[2025-09-03T04:37:00.342+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_institution.py                           1           0  -50.08s         2025-09-03T04:36:42
+/opt/airflow/dags/dag_dataquality.py                           1           0  -50.09s         2025-09-03T04:36:42
+================================================================================
+[2025-09-03T04:37:30.453+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_institution.py                           1           0  0.23s           2025-09-03T04:37:12
+/opt/airflow/dags/dag_dataquality.py                           1           0  0.23s           2025-09-03T04:37:12
+================================================================================
+[2025-09-03T04:38:00.759+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_institution.py                           1           0  0.08s           2025-09-03T04:37:42
+/opt/airflow/dags/dag_dataquality.py                           1           0  0.07s           2025-09-03T04:37:42
+================================================================================

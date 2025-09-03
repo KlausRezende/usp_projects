@@ -1,0 +1,3 @@
+docker-volume/db-data/mysql.sock.lock
+docker-volume/db-data/*.sock
+docker-volume/db-data/*.lock

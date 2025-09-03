@@ -1,6 +1,7 @@
 #!/bin/bash
 
 echo "🚀 Starting Docker containers..."
+chmod -R 777 docker-volume/db-data/ openmetadata-docker/docker-volume/db-data/
 docker compose -f docker-compose.yaml up -d
 
 echo "⏳ Waiting for PostgreSQL to be ready..."
