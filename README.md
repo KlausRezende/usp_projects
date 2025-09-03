@@ -18,4 +18,4 @@
 - **Password:** airflow
 - **Host and Port:** postgres_simple:5432
 - **Database:** customer_db
-- **Configuration:** Ingest All Databasesss
+- **Configuration:** Ingest All Databasessss
