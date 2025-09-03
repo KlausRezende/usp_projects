@@ -1,19 +1,21 @@
-login
+# USP Projects
 
-airflow
-admin
-admin
+## Login Credentials
 
-openmetadata
-Username - admin@open-metadata.org
-Password - adminpostgres_simple
+### Airflow
+- **Username:** admin
+- **Password:** admin
 
+### OpenMetadata
+- **Username:** admin@open-metadata.org
+- **Password:** adminpostgres_simple
 
+## Database Configuration
 
-criar conexao postgre
-Username:airflow
-Auth Configuration Type: Basic Auth
-Password: airflow
-Host and Port: postgres_simple:5432
-Database: customer_db
-Ingest All Databases
+### PostgreSQL Connection Setup
+- **Username:** airflow
+- **Auth Configuration Type:** Basic Auth
+- **Password:** airflow
+- **Host and Port:** postgres_simple:5432
+- **Database:** customer_db
+- **Configuration:** Ingest All Databases
