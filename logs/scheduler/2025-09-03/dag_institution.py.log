@@ -8858,3 +8858,87 @@ DETAIL:  Key (name)=(can_edit) already exists.
 [2025-09-03T04:56:34.334+0000] {logging_mixin.py:137} INFO - [2025-09-03T04:56:34.334+0000] {dag.py:2690} INFO - Sync 1 DAGs
 [2025-09-03T04:56:34.348+0000] {logging_mixin.py:137} INFO - [2025-09-03T04:56:34.348+0000] {dag.py:3437} INFO - Setting next_dagrun for institution_detail_pipeline to 2025-09-02T09:00:00+00:00, run_after=2025-09-03T09:00:00+00:00
 [2025-09-03T04:56:34.358+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/dag_institution.py took 0.058 seconds
+[2025-09-03T04:57:04.451+0000] {processor.py:153} INFO - Started process (PID=502) to work on /opt/airflow/dags/dag_institution.py
+[2025-09-03T04:57:04.452+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/dag_institution.py for tasks to queue
+[2025-09-03T04:57:04.453+0000] {logging_mixin.py:137} INFO - [2025-09-03T04:57:04.453+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_institution.py
+[2025-09-03T04:57:04.478+0000] {processor.py:753} INFO - DAG(s) dict_keys(['institution_detail_pipeline']) retrieved from /opt/airflow/dags/dag_institution.py
+[2025-09-03T04:57:04.520+0000] {logging_mixin.py:137} INFO - [2025-09-03T04:57:04.520+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-09-03T04:57:04.537+0000] {logging_mixin.py:137} INFO - [2025-09-03T04:57:04.537+0000] {dag.py:3437} INFO - Setting next_dagrun for institution_detail_pipeline to 2025-09-02T09:00:00+00:00, run_after=2025-09-03T09:00:00+00:00
+[2025-09-03T04:57:04.549+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/dag_institution.py took 0.101 seconds
+[2025-09-03T04:57:58.788+0000] {processor.py:153} INFO - Started process (PID=512) to work on /opt/airflow/dags/dag_institution.py
+[2025-09-03T04:57:58.789+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/dag_institution.py for tasks to queue
+[2025-09-03T04:57:58.789+0000] {logging_mixin.py:137} INFO - [2025-09-03T04:57:58.789+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_institution.py
+[2025-09-03T04:57:58.806+0000] {processor.py:753} INFO - DAG(s) dict_keys(['institution_detail_pipeline']) retrieved from /opt/airflow/dags/dag_institution.py
+[2025-09-03T04:57:58.819+0000] {logging_mixin.py:137} INFO - [2025-09-03T04:57:58.819+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-09-03T04:57:58.832+0000] {logging_mixin.py:137} INFO - [2025-09-03T04:57:58.832+0000] {dag.py:3437} INFO - Setting next_dagrun for institution_detail_pipeline to 2025-09-02T09:00:00+00:00, run_after=2025-09-03T09:00:00+00:00
+[2025-09-03T04:57:58.842+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/dag_institution.py took 0.056 seconds
+[2025-09-03T04:58:28.901+0000] {processor.py:153} INFO - Started process (PID=522) to work on /opt/airflow/dags/dag_institution.py
+[2025-09-03T04:58:28.902+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/dag_institution.py for tasks to queue
+[2025-09-03T04:58:28.902+0000] {logging_mixin.py:137} INFO - [2025-09-03T04:58:28.902+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_institution.py
+[2025-09-03T04:58:28.923+0000] {processor.py:753} INFO - DAG(s) dict_keys(['institution_detail_pipeline']) retrieved from /opt/airflow/dags/dag_institution.py
+[2025-09-03T04:58:28.939+0000] {logging_mixin.py:137} INFO - [2025-09-03T04:58:28.939+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-09-03T04:58:28.954+0000] {logging_mixin.py:137} INFO - [2025-09-03T04:58:28.954+0000] {dag.py:3437} INFO - Setting next_dagrun for institution_detail_pipeline to 2025-09-02T09:00:00+00:00, run_after=2025-09-03T09:00:00+00:00
+[2025-09-03T04:58:28.965+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/dag_institution.py took 0.067 seconds
+[2025-09-03T04:59:03.892+0000] {processor.py:153} INFO - Started process (PID=532) to work on /opt/airflow/dags/dag_institution.py
+[2025-09-03T04:59:03.893+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/dag_institution.py for tasks to queue
+[2025-09-03T04:59:03.893+0000] {logging_mixin.py:137} INFO - [2025-09-03T04:59:03.893+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_institution.py
+[2025-09-03T04:59:03.946+0000] {processor.py:753} INFO - DAG(s) dict_keys(['institution_detail_pipeline']) retrieved from /opt/airflow/dags/dag_institution.py
+[2025-09-03T04:59:03.976+0000] {logging_mixin.py:137} INFO - [2025-09-03T04:59:03.976+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-09-03T04:59:03.991+0000] {logging_mixin.py:137} INFO - [2025-09-03T04:59:03.991+0000] {dag.py:3437} INFO - Setting next_dagrun for institution_detail_pipeline to 2025-09-02T09:00:00+00:00, run_after=2025-09-03T09:00:00+00:00
+[2025-09-03T04:59:04.003+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/dag_institution.py took 0.114 seconds
+[2025-09-03T04:59:34.105+0000] {processor.py:153} INFO - Started process (PID=542) to work on /opt/airflow/dags/dag_institution.py
+[2025-09-03T04:59:34.105+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/dag_institution.py for tasks to queue
+[2025-09-03T04:59:34.106+0000] {logging_mixin.py:137} INFO - [2025-09-03T04:59:34.106+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_institution.py
+[2025-09-03T04:58:43.934+0000] {processor.py:753} INFO - DAG(s) dict_keys(['institution_detail_pipeline']) retrieved from /opt/airflow/dags/dag_institution.py
+[2025-09-03T04:58:43.971+0000] {logging_mixin.py:137} INFO - [2025-09-03T04:58:43.971+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-09-03T04:58:43.992+0000] {logging_mixin.py:137} INFO - [2025-09-03T04:58:43.992+0000] {dag.py:3437} INFO - Setting next_dagrun for institution_detail_pipeline to 2025-09-02T09:00:00+00:00, run_after=2025-09-03T09:00:00+00:00
+[2025-09-03T04:58:44.004+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/dag_institution.py took 0.112 seconds
+[2025-09-03T04:58:48.921+0000] {processor.py:153} INFO - Started process (PID=552) to work on /opt/airflow/dags/dag_institution.py
+[2025-09-03T04:58:48.921+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/dag_institution.py for tasks to queue
+[2025-09-03T04:58:48.922+0000] {logging_mixin.py:137} INFO - [2025-09-03T04:58:48.922+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_institution.py
+[2025-09-03T04:58:48.941+0000] {processor.py:753} INFO - DAG(s) dict_keys(['institution_detail_pipeline']) retrieved from /opt/airflow/dags/dag_institution.py
+[2025-09-03T04:58:48.955+0000] {logging_mixin.py:137} INFO - [2025-09-03T04:58:48.955+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-09-03T04:58:48.969+0000] {logging_mixin.py:137} INFO - [2025-09-03T04:58:48.969+0000] {dag.py:3437} INFO - Setting next_dagrun for institution_detail_pipeline to 2025-09-02T09:00:00+00:00, run_after=2025-09-03T09:00:00+00:00
+[2025-09-03T04:58:48.980+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/dag_institution.py took 0.062 seconds
+[2025-09-03T04:59:19.029+0000] {processor.py:153} INFO - Started process (PID=562) to work on /opt/airflow/dags/dag_institution.py
+[2025-09-03T04:59:19.029+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/dag_institution.py for tasks to queue
+[2025-09-03T04:59:19.030+0000] {logging_mixin.py:137} INFO - [2025-09-03T04:59:19.030+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_institution.py
+[2025-09-03T04:59:19.061+0000] {processor.py:753} INFO - DAG(s) dict_keys(['institution_detail_pipeline']) retrieved from /opt/airflow/dags/dag_institution.py
+[2025-09-03T04:59:19.096+0000] {logging_mixin.py:137} INFO - [2025-09-03T04:59:19.096+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-09-03T04:59:19.115+0000] {logging_mixin.py:137} INFO - [2025-09-03T04:59:19.115+0000] {dag.py:3437} INFO - Setting next_dagrun for institution_detail_pipeline to 2025-09-02T09:00:00+00:00, run_after=2025-09-03T09:00:00+00:00
+[2025-09-03T04:59:19.128+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/dag_institution.py took 0.102 seconds
+[2025-09-03T04:59:49.165+0000] {processor.py:153} INFO - Started process (PID=572) to work on /opt/airflow/dags/dag_institution.py
+[2025-09-03T04:59:49.166+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/dag_institution.py for tasks to queue
+[2025-09-03T04:59:49.167+0000] {logging_mixin.py:137} INFO - [2025-09-03T04:59:49.167+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_institution.py
+[2025-09-03T04:59:49.193+0000] {processor.py:753} INFO - DAG(s) dict_keys(['institution_detail_pipeline']) retrieved from /opt/airflow/dags/dag_institution.py
+[2025-09-03T04:59:49.210+0000] {logging_mixin.py:137} INFO - [2025-09-03T04:59:49.210+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-09-03T04:59:49.226+0000] {logging_mixin.py:137} INFO - [2025-09-03T04:59:49.226+0000] {dag.py:3437} INFO - Setting next_dagrun for institution_detail_pipeline to 2025-09-02T09:00:00+00:00, run_after=2025-09-03T09:00:00+00:00
+[2025-09-03T04:59:49.237+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/dag_institution.py took 0.074 seconds
+[2025-09-03T05:00:19.333+0000] {processor.py:153} INFO - Started process (PID=582) to work on /opt/airflow/dags/dag_institution.py
+[2025-09-03T05:00:19.334+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/dag_institution.py for tasks to queue
+[2025-09-03T05:00:19.335+0000] {logging_mixin.py:137} INFO - [2025-09-03T05:00:19.334+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_institution.py
+[2025-09-03T05:00:19.354+0000] {processor.py:753} INFO - DAG(s) dict_keys(['institution_detail_pipeline']) retrieved from /opt/airflow/dags/dag_institution.py
+[2025-09-03T05:00:19.372+0000] {logging_mixin.py:137} INFO - [2025-09-03T05:00:19.372+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-09-03T05:00:19.388+0000] {logging_mixin.py:137} INFO - [2025-09-03T05:00:19.388+0000] {dag.py:3437} INFO - Setting next_dagrun for institution_detail_pipeline to 2025-09-02T09:00:00+00:00, run_after=2025-09-03T09:00:00+00:00
+[2025-09-03T05:00:19.400+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/dag_institution.py took 0.070 seconds
+[2025-09-03T05:00:49.445+0000] {processor.py:153} INFO - Started process (PID=592) to work on /opt/airflow/dags/dag_institution.py
+[2025-09-03T05:00:49.446+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/dag_institution.py for tasks to queue
+[2025-09-03T05:00:49.446+0000] {logging_mixin.py:137} INFO - [2025-09-03T05:00:49.446+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_institution.py
+[2025-09-03T05:00:49.464+0000] {processor.py:753} INFO - DAG(s) dict_keys(['institution_detail_pipeline']) retrieved from /opt/airflow/dags/dag_institution.py
+[2025-09-03T05:00:49.493+0000] {logging_mixin.py:137} INFO - [2025-09-03T05:00:49.492+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-09-03T05:00:49.507+0000] {logging_mixin.py:137} INFO - [2025-09-03T05:00:49.507+0000] {dag.py:3437} INFO - Setting next_dagrun for institution_detail_pipeline to 2025-09-02T09:00:00+00:00, run_after=2025-09-03T09:00:00+00:00
+[2025-09-03T05:00:49.518+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/dag_institution.py took 0.075 seconds
+[2025-09-03T05:01:19.611+0000] {processor.py:153} INFO - Started process (PID=602) to work on /opt/airflow/dags/dag_institution.py
+[2025-09-03T05:01:19.612+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/dag_institution.py for tasks to queue
+[2025-09-03T05:01:19.612+0000] {logging_mixin.py:137} INFO - [2025-09-03T05:01:19.612+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_institution.py
+[2025-09-03T05:01:19.637+0000] {processor.py:753} INFO - DAG(s) dict_keys(['institution_detail_pipeline']) retrieved from /opt/airflow/dags/dag_institution.py
+[2025-09-03T05:01:19.660+0000] {logging_mixin.py:137} INFO - [2025-09-03T05:01:19.660+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-09-03T05:01:19.675+0000] {logging_mixin.py:137} INFO - [2025-09-03T05:01:19.675+0000] {dag.py:3437} INFO - Setting next_dagrun for institution_detail_pipeline to 2025-09-02T09:00:00+00:00, run_after=2025-09-03T09:00:00+00:00
+[2025-09-03T05:01:19.685+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/dag_institution.py took 0.077 seconds
+[2025-09-03T05:01:49.711+0000] {processor.py:153} INFO - Started process (PID=612) to work on /opt/airflow/dags/dag_institution.py
+[2025-09-03T05:01:49.711+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/dag_institution.py for tasks to queue
+[2025-09-03T05:01:49.712+0000] {logging_mixin.py:137} INFO - [2025-09-03T05:01:49.712+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_institution.py
+[2025-09-03T05:01:49.731+0000] {processor.py:753} INFO - DAG(s) dict_keys(['institution_detail_pipeline']) retrieved from /opt/airflow/dags/dag_institution.py
+[2025-09-03T05:01:49.758+0000] {logging_mixin.py:137} INFO - [2025-09-03T05:01:49.757+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-09-03T05:01:49.775+0000] {logging_mixin.py:137} INFO - [2025-09-03T05:01:49.775+0000] {dag.py:3437} INFO - Setting next_dagrun for institution_detail_pipeline to 2025-09-02T09:00:00+00:00, run_after=2025-09-03T09:00:00+00:00
+[2025-09-03T05:01:49.786+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/dag_institution.py took 0.078 seconds
